@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-30T21:27:13.417Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="iDH6M4YgOZvRsusnetMF" version="15.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-30T21:27:47.983Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="pt9F1f1h-5uzDeCQ2cCs" version="15.8.8" type="github">
   <diagram id="EFcw6gjaHGxxeZgJHK0b" name="Page-1">
-    <mxGraphModel dx="1662" dy="1894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2770" dy="2423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry y="45" width="165" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EYS2qF--blhmmiSUQ3xL-19" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#333333;&quot;&gt;«enumeration»&lt;/span&gt;&lt;span style=&quot;font-size:13px;font-weight: bold;&quot;&gt;&#xa;PaymentRecivedType&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;swimlane;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;fontStyle=0;marginBottom=0;swimlaneFillColor=#ffffff;startSize=40;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;whiteSpace=wrap;fontSize=13;align=left;spacing=0;strokeColor=#333333;strokeOpacity=100;fillOpacity=100;fillColor=#ffffff;strokeWidth=1.5;" parent="1" vertex="1">
-          <mxGeometry x="360" y="230" width="240" height="89" as="geometry" />
+          <mxGeometry x="310" y="155" width="240" height="89" as="geometry" />
         </mxCell>
         <mxCell id="EYS2qF--blhmmiSUQ3xL-20" value="&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#333333;&quot;&gt;PAYMENT_PENDING&#xa;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; justify-content: center; text-align: center; align-items: baseline; font-size: 0; line-height: 1.25;margin-top: -2px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-size:13px;color:#333333;&quot;&gt;APPOINTMENT_PAYED&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="part=1;html=1;whiteSpace=wrap;resizeHeight=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#ffffff;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;overflow=block;blockSpacing=1;html=1;fontSize=13;" parent="EYS2qF--blhmmiSUQ3xL-19" vertex="1">
           <mxGeometry y="40" width="240" height="49" as="geometry" />
@@ -184,7 +184,7 @@
           <mxGeometry y="178" width="500" height="72" as="geometry" />
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-22" value="Main" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="400" y="540" width="160" height="60" as="geometry" />
+          <mxGeometry x="370" y="400" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zxzLp0mtqtxGYjEKBagh-22" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
