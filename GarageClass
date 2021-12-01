@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T16:16:29.765Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="FfsXoubNwKRCvmO_oX6M" version="15.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-01T16:20:40.700Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="UEv4QvsDFjmnN97kygcE" version="15.8.6" type="github">
   <diagram id="EFcw6gjaHGxxeZgJHK0b" name="Page-1">
     <mxGraphModel dx="1483" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -253,6 +253,12 @@
         </mxCell>
         <mxCell id="yMAhvVp2I19SjOlaPWFa-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="yMAhvVp2I19SjOlaPWFa-1">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yMAhvVp2I19SjOlaPWFa-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" source="yMAhvVp2I19SjOlaPWFa-9" target="zxzLp0mtqtxGYjEKBagh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yMAhvVp2I19SjOlaPWFa-9" value="Note&lt;br&gt;toString returns (Date,make, bookingtype and registration)" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1890" y="550" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
