@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T16:29:23.480Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="GRcj08z1VoyHj3sdvoeT" version="15.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-01T16:43:38.342Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="iXfJlxtKJ1MqqUO-_1u0" version="15.8.6" type="github">
   <diagram id="EFcw6gjaHGxxeZgJHK0b" name="Page-1">
-    <mxGraphModel dx="1483" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1278" dy="1679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -147,7 +147,7 @@
         <mxCell id="zxzLp0mtqtxGYjEKBagh-30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=none;endFill=0;dashed=1;" parent="1" source="G-0Wf-72xgBhn26NRIbH-3" target="EYS2qF--blhmmiSUQ3xL-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G-0Wf-72xgBhn26NRIbH-3" value="Note&lt;br&gt;Method toString prints the total cost and destroy status" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="G-0Wf-72xgBhn26NRIbH-3" value="Note&lt;br&gt;Method toString prints the total cost and destroy status" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="740" y="60" width="200" height="90" as="geometry" />
         </mxCell>
         <mxCell id="SsiXtBjtoOvlluKXPK2o-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.602;entryY=1.024;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;dashed=1;" parent="1" source="SsiXtBjtoOvlluKXPK2o-1" target="DLlwjD8Pi-1Px530ye9a-10" edge="1">
@@ -183,7 +183,7 @@
         <mxCell id="zxzLp0mtqtxGYjEKBagh-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zxzLp0mtqtxGYjEKBagh-3" vertex="1">
           <mxGeometry y="170" width="500" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="zxzLp0mtqtxGYjEKBagh-6" value="constructor(String make. int carAge, String description)&#xa;&#xa;toString()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zxzLp0mtqtxGYjEKBagh-3" vertex="1">
+        <mxCell id="zxzLp0mtqtxGYjEKBagh-6" value="constructor(String make. int age, String description)&#xa;&#xa;toString()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zxzLp0mtqtxGYjEKBagh-3" vertex="1">
           <mxGeometry y="178" width="500" height="72" as="geometry" />
         </mxCell>
         <mxCell id="HDbL-LfhZbkiK2X6rMLL-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="zxzLp0mtqtxGYjEKBagh-31" target="EYS2qF--blhmmiSUQ3xL-24" edge="1">
@@ -242,7 +242,7 @@
         <mxCell id="HDbL-LfhZbkiK2X6rMLL-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="HDbL-LfhZbkiK2X6rMLL-9" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HDbL-LfhZbkiK2X6rMLL-12" value="+viewSales()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HDbL-LfhZbkiK2X6rMLL-9" vertex="1">
+        <mxCell id="HDbL-LfhZbkiK2X6rMLL-12" value="+viewSales():String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HDbL-LfhZbkiK2X6rMLL-9" vertex="1">
           <mxGeometry y="34" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="yMAhvVp2I19SjOlaPWFa-1" value="Person" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
@@ -258,7 +258,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="yMAhvVp2I19SjOlaPWFa-9" value="Note&lt;br&gt;toString returns (Date,make, bookingtype and registration)" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="1890" y="550" width="240" height="80" as="geometry" />
+          <mxGeometry x="1780" y="490" width="240" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
