@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-02T21:05:26.037Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="McXmIo900tj2qUYjXRga" version="15.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-02T21:06:22.939Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="_Uzlqft43Q93P9eFPFG7" version="15.8.8" type="github">
   <diagram id="EFcw6gjaHGxxeZgJHK0b" name="Page-1">
     <mxGraphModel dx="1146" dy="1648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -65,7 +65,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="DLlwjD8Pi-1Px530ye9a-11" value="Note&lt;br&gt;Each time the Part constructor is invoked, the price is added to totalPartCost" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
-          <mxGeometry x="2210" y="480" width="200" height="70" as="geometry" />
+          <mxGeometry x="2040" y="436.5" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="ql8LYRoZUUsGZsJnQ4BQ-1" target="zxzLp0mtqtxGYjEKBagh-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -124,7 +124,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SsiXtBjtoOvlluKXPK2o-1" value="Note&lt;br&gt;String returns &quot;Total Part cost is =&amp;lt;totalPartCost&amp;gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
-          <mxGeometry x="2370" y="560" width="180" height="70" as="geometry" />
+          <mxGeometry x="2360" y="455" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="1LGvvRpb-lk3MOTpUXd3-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -133,16 +133,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-3" value="ServiceAppointment&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1740" y="174" width="270" height="228" as="geometry" />
+          <mxGeometry x="1745" y="200" width="270" height="196" as="geometry" />
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-4" value="&lt;&lt;get/set&gt;&gt; - date: String&#xa;&lt;&lt;get/set&gt;&gt; - time: String&#xa;&lt;&lt;get/set&gt;&gt; - booking: BookingType&#xa;&lt;&lt;get/set&gt;&gt;- paid: PaymentRecievedType&#xa;&#xa;&lt;&lt;get/set&gt;&gt; - destroy: boolean&#xa;&lt;&lt;get/set&gt;&gt; - cost: Double&#xa;&lt;&lt;get/set&gt;&gt; - status:CarStautusType&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zxzLp0mtqtxGYjEKBagh-3" vertex="1">
-          <mxGeometry y="26" width="270" height="154" as="geometry" />
+          <mxGeometry y="26" width="270" height="124" as="geometry" />
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zxzLp0mtqtxGYjEKBagh-3" vertex="1">
-          <mxGeometry y="180" width="270" height="8" as="geometry" />
+          <mxGeometry y="150" width="270" height="8" as="geometry" />
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-6" value="&#xa;+toString()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zxzLp0mtqtxGYjEKBagh-3" vertex="1">
-          <mxGeometry y="188" width="270" height="40" as="geometry" />
+          <mxGeometry y="158" width="270" height="38" as="geometry" />
         </mxCell>
         <mxCell id="yMAhvVp2I19SjOlaPWFa-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zxzLp0mtqtxGYjEKBagh-31" target="yMAhvVp2I19SjOlaPWFa-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
