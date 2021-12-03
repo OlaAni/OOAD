@@ -1,4 +1,7 @@
+import java.text.DecimalFormat;
+
 public class Part {
+    DecimalFormat df = new DecimalFormat("###,###.##");
 
     private String part;
     private double price;
@@ -39,5 +42,15 @@ public class Part {
 
     public static String getTotalPartCost() {
         return "Total part cost is = "+ totalPartCost;
+    }
+
+    public void ResetTotalPartCost()
+    {
+        totalPartCost = 0;
+    }
+
+    @Override
+    public String toString() {
+        return this.part + " = " + df.format(this.price);
     }
 }
