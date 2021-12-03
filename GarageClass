@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-03T10:24:08.849Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="axU1HpFzCLefYi7eRtJ8" version="15.8.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-03T10:25:37.139Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="E_56ESDuUBLwz6Af9mF9" version="15.8.9" type="github">
   <diagram id="EFcw6gjaHGxxeZgJHK0b" name="Page-1">
     <mxGraphModel dx="865" dy="1583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -64,7 +64,7 @@
         <mxCell id="DLlwjD8Pi-1Px530ye9a-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" parent="1" source="DLlwjD8Pi-1Px530ye9a-11" target="DLlwjD8Pi-1Px530ye9a-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DLlwjD8Pi-1Px530ye9a-11" value="Note&lt;br&gt;Each time the Part constructor is invoked, the price is added to totalPartCost" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
+        <mxCell id="DLlwjD8Pi-1Px530ye9a-11" value="Note:&lt;br&gt;Each time the Part constructor is invoked, the price is added to totalPartCost" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="2090" y="450" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="zxzLp0mtqtxGYjEKBagh-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="ql8LYRoZUUsGZsJnQ4BQ-1" target="zxzLp0mtqtxGYjEKBagh-6" edge="1">
@@ -124,7 +124,7 @@
         <mxCell id="SsiXtBjtoOvlluKXPK2o-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.602;entryY=1.024;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;dashed=1;" parent="1" source="SsiXtBjtoOvlluKXPK2o-1" target="DLlwjD8Pi-1Px530ye9a-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SsiXtBjtoOvlluKXPK2o-1" value="Note&lt;br&gt;toString returns &quot;Total Part cost is =&amp;lt;totalPartCost&amp;gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
+        <mxCell id="SsiXtBjtoOvlluKXPK2o-1" value="Note:&lt;br&gt;toString returns &quot;Total Part cost is =&amp;lt;totalPartCost&amp;gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="2360" y="455" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="1LGvvRpb-lk3MOTpUXd3-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" edge="1">
@@ -186,7 +186,7 @@
         <mxCell id="yMAhvVp2I19SjOlaPWFa-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" parent="1" source="yMAhvVp2I19SjOlaPWFa-9" target="zxzLp0mtqtxGYjEKBagh-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yMAhvVp2I19SjOlaPWFa-9" value="Note&lt;br&gt;toString returns (Date,make, bookingtype and registration)" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
+        <mxCell id="yMAhvVp2I19SjOlaPWFa-9" value="Note:&lt;br&gt;toString returns (Date,make, bookingtype and registration)" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="1790" y="25" width="240" height="80" as="geometry" />
         </mxCell>
         <mxCell id="zRKIkBoORPYC3eFMOyOu-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="g3ecRTtAqNZQtpmA0i5R-1" target="zxzLp0mtqtxGYjEKBagh-6">
