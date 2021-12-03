@@ -1,4 +1,4 @@
-public class Mechanic extends Person{
+public class Mechanic{
     private String id;
 
 
