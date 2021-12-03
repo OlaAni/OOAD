@@ -11,7 +11,7 @@ public class Main {
         System.out.println(part1);
 
 
-        System.out.println(part2.getTotalPartCost());
+        System.out.println(Part.getTotalPartCost());
         System.out.println("===================================================================");
 
     }
