@@ -1,9 +1,11 @@
 <?php
-require_once "autoload.php";
 
-$part1 = new Part("Wheel",5.00);
-$part2 = new Part("Wheel",5.00);
+require_once "ServiceAppointment.php";
+require_once "BookingType.php";
 
-print $part1. "\n";
+$s = new ServiceAppointment();
+$s->setDate("11/11/11");
+$s->setBooking(BookingType::REPAIR);
 
-print Part::getTotalPartCost();
+print $s;
+
