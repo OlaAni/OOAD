@@ -3,21 +3,21 @@ import java.text.DecimalFormat;
 public class Part {
     DecimalFormat df = new DecimalFormat("###,###.##");
 
-    private String part;
+    private String name;
     private double price;
     private int id;
     public static double totalPartCost = 0;
 
     public Part(String part, double price)
     {
-        this.part = part;
+        this.name = part;
         this.price = price;
 
         totalPartCost += price;
     }
 
-    public String getPart() {
-        return this.part;
+    public String getName() {
+        return this.name;
     }
 
     public int getId() {
@@ -32,8 +32,8 @@ public class Part {
         this.id = id;
     }
 
-    public void setPart(String part) {
-        this.part = part;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPrice(double price) {
@@ -51,6 +51,6 @@ public class Part {
 
     @Override
     public String toString() {
-        return this.part + " = " + df.format(this.price);
+        return this.name + " = " + df.format(this.price);
     }
 }
