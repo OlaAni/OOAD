@@ -1,22 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        Mechanic mechanic1 = new Mechanic("John Doe",353892324);
-        HeadMechanic headMechanic = new HeadMechanic("Jane Doe",324532523);
-
-        headMechanic.setId("HM11");
-        mechanic1.setId("M550");
-        System.out.println(mechanic1);
-        System.out.println(headMechanic);
-
         
-        System.out.println("===================================================================");
+        System.out.println("\n======================<--ServiceAppointment Object-->=========================================");
         
         ServiceAppointment ServiceAppointment1 = new ServiceAppointment();
         ServiceAppointment1.setBooking(BookingType.REPAIR);
         ServiceAppointment1.setDate("11/11/2011");
         System.out.print(ServiceAppointment1);
-        System.out.println("\n===================================================================");
+        System.out.println("\n======================<--Car Object-->=========================================");
 
         Car car1 = new Car();
         car1.setMake("Bently");
@@ -28,7 +20,26 @@ public class Main {
         car2.setRegistration("GM123");
         car2.setYear(1990);
 
-        System.out.println("\n===================================================================");
+        System.out.println("\n======================<--Mechanic + HeadMechanic Object-->=========================================");
+
+        Mechanic mechanic1 = new Mechanic("John Doe",353892324, JobType.MECHANIC);
+        HeadMechanic headMechanic = new HeadMechanic("Jane Doe",324532523, JobType.HEAD_MECHANIC);
+
+        mechanic1.setCar(car1);
+        headMechanic.setCar(car2);
+
+        
+
+        headMechanic.setId("HM11");
+        mechanic1.setId("M550");
+        System.out.println(mechanic1);
+        System.out.println(headMechanic+"\n");
+
+        System.out.println(mechanic1.viewCarDetails());
+        System.out.println(headMechanic.viewCarDetails());
+
+        System.out.println("\n======================<--Part Object-->=========================================");
+
         
         Part part1 = new Part("Wheel", 5.00);
         Part part2 = new Part("Spoiler", 50.00);
@@ -40,10 +51,8 @@ public class Main {
         
         System.out.println(Part.getTotalPartCost());
         Part.ResetTotalPartCost();
-        System.out.println("===================================================================");
 
-
-
+        
         Part part3 = new Part("Window", 15.00);
         Part part4 = new Part("Exhaust", 100.00);
 

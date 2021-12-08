@@ -1,10 +1,12 @@
 public class Mechanic extends Person{
     private String id;
+    private Car car;
 
-    public Mechanic(String name, int phoneNumber)
+    public Mechanic(String name, int phoneNumber, JobType job)
     {
         this.setName(name);
         this.setPhoneNumber(phoneNumber);
+        this.setJob(job);
 
     }
     public String getId() {
@@ -15,14 +17,18 @@ public class Mechanic extends Person{
         this.id = id;
     }
 
-
-    public void viewCarDetails()
+    public void setCar(Car car)
     {
+        this.car = car;
 
     }
 
-    @Override
+    public String viewCarDetails()
+    {
+        return "Car Details\nReg:" +car.getRegistration()+" Year: "+ car.getMake();
+    }
+
     public String toString() {
-        return "Mechanics name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+". ID nuber is "+ this.id;
+        return this.getJob()+" name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+". ID nuber is "+ this.getId();
     }
 }
