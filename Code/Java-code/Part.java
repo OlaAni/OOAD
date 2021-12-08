@@ -44,7 +44,7 @@ public class Part {
         return "Total part cost is = "+ totalPartCost;
     }
 
-    public void ResetTotalPartCost()
+    public static void ResetTotalPartCost()
     {
         totalPartCost = 0;
     }

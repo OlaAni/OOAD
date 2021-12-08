@@ -23,6 +23,6 @@ public class Mechanic extends Person{
 
     @Override
     public String toString() {
-        return "Mechanics name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+".";
+        return "Mechanics name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+". ID nuber is "+ this.id;
     }
 }
