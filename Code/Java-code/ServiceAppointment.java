@@ -7,6 +7,9 @@ public class ServiceAppointment{
     private boolean destroy;
     private double cost;
     private CarStatusType status;
+
+    private Car car;
+    private Customer customer;
     
     public String getDate() {
         return date;
@@ -67,7 +70,21 @@ public class ServiceAppointment{
     public void cancelAppointment(){
     }
 
+    
+    public void setCar(Car car)
+    {
+        this.car = car;
+
+    }
+
+        
+    public void setCustomer(Customer customer)
+    {
+        this.customer = customer;
+
+    }
+
     public String toString(){
-        return "Appointment date: " + date + " Booking type: " + booking;
+        return "Appointment date: " + date + " Booking type: " + booking + " with "+this.car +" for "+ this.customer;
     }
 }

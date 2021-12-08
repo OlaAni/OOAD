@@ -21,4 +21,9 @@ public class Car {
 	public void setRegistration(String registration) {
 		this.registration = registration;
 	}
+
+	public String toString() {
+		return "Car \nReg:" +this.registration+" Year: "+ this.year + "Make: "+this.make;
+
+	}
 }

@@ -1,4 +1,6 @@
-public class Customer {
+import java.time.YearMonth;
+
+public class Customer extends Person{
     
     private String email;
     private int phoneNumber;
@@ -27,4 +29,9 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }  
+
+    @Override
+    public String toString() {
+        return this.getName();
+    }
 }

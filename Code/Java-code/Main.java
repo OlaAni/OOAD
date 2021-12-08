@@ -1,13 +1,6 @@
 public class Main {
     public static void main(String[] args) {
 
-        
-        System.out.println("\n======================<--ServiceAppointment Object-->=========================================");
-        
-        ServiceAppointment ServiceAppointment1 = new ServiceAppointment();
-        ServiceAppointment1.setBooking(BookingType.REPAIR);
-        ServiceAppointment1.setDate("11/11/2011");
-        System.out.print(ServiceAppointment1);
         System.out.println("\n======================<--Car Object-->=========================================");
 
         Car car1 = new Car();
@@ -20,18 +13,41 @@ public class Main {
         car2.setRegistration("GM123");
         car2.setYear(1990);
 
+        System.out.println("\n======================<--Customer Object-->=========================================");
+        Customer customer1 = new Customer();
+        customer1.setName("Jim Doe");
+
+        Customer customer2 = new Customer();
+        customer2.setName("Jake Doe");
+
+        
+        System.out.println("\n======================<--ServiceAppointment Object-->=========================================");
+        
+        ServiceAppointment serviceAppointment1 = new ServiceAppointment();
+        serviceAppointment1.setCustomer(customer1);
+        serviceAppointment1.setCar(car1);
+        serviceAppointment1.setBooking(BookingType.REPAIR);
+        serviceAppointment1.setDate("11/11/2011");
+        System.out.println(serviceAppointment1);
+
+        ServiceAppointment serviceAppointment2 = new ServiceAppointment();
+        serviceAppointment2.setCustomer(customer2);
+        serviceAppointment2.setCar(car2);
+        serviceAppointment2.setBooking(BookingType.MODIFICATION);
+        serviceAppointment2.setDate("11/12/2021");
+        System.out.println(serviceAppointment2);
+
+
         System.out.println("\n======================<--Mechanic + HeadMechanic Object-->=========================================");
 
         Mechanic mechanic1 = new Mechanic("John Doe",353892324, JobType.MECHANIC);
         HeadMechanic headMechanic = new HeadMechanic("Jane Doe",324532523, JobType.HEAD_MECHANIC);
+        headMechanic.setId("HM11");
+        mechanic1.setId("M550");
 
         mechanic1.setCar(car1);
         headMechanic.setCar(car2);
 
-        
-
-        headMechanic.setId("HM11");
-        mechanic1.setId("M550");
         System.out.println(mechanic1);
         System.out.println(headMechanic+"\n");
 

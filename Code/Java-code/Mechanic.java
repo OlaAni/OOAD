@@ -1,5 +1,7 @@
 public class Mechanic extends Person{
     private String id;
+    private JobType job;
+
     private Car car;
 
     public Mechanic(String name, int phoneNumber, JobType job)
@@ -22,6 +24,15 @@ public class Mechanic extends Person{
         this.car = car;
 
     }
+
+    
+	public void setJob(JobType job) {
+		this.job = job;
+	}
+
+	public JobType getJob() {
+		return this.job;
+	}
 
     public String viewCarDetails()
     {
