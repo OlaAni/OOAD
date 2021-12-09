@@ -46,8 +46,8 @@ public class Main {
         headMechanic.setId("HM11");
         mechanic1.setId("M550");
 
-        mechanic1.setserviceAppointment(serviceAppointment1);
-        headMechanic.setserviceAppointment(serviceAppointment2);
+        mechanic1.setServiceAppointment(serviceAppointment1);
+        headMechanic.setServiceAppointment(serviceAppointment2);
 
         System.out.println(mechanic1);
         System.out.println(headMechanic+"\n");

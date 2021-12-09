@@ -19,8 +19,4 @@ public class Customer extends Person{
         this.address = address;
     }  
 
-    @Override
-    public String toString() {
-        return this.getName();
-    }
 }

@@ -90,6 +90,6 @@ public class ServiceAppointment{
     }
 
     public String toString(){
-        return "Appointment date: " + date + " Booking type: " + booking + " with "+this.car +" for "+ this.customer;
+        return "Appointment date: " + date + " Booking type: " + booking + " with "+this.car +" for "+ this.customer.getName();
     }
 }

@@ -28,7 +28,7 @@ public class Mechanic extends Person{
 	}
 
 
-    public void setserviceAppointment(ServiceAppointment serviceAppointment)
+    public void setServiceAppointment(ServiceAppointment serviceAppointment)
     {
         this.serviceAppointment = serviceAppointment;
 
