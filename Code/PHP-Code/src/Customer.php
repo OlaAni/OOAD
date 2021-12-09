@@ -25,6 +25,4 @@ class Customer extends Person
         $this->address = $address;
     }
 
-
-
 }

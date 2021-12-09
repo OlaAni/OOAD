@@ -1,14 +1,16 @@
 <?php
-
-require_once "BookingType.php";
-
+require_once "autoload.php";
 class ServiceAppointment{
+
     private string $date;
     private string $time;
     private BookingType $booking;
     private PaymentRecievedType $paid;
     private bool $destroy;
     private float $cost;
+
+    private Car $car;
+    private Customer $customer;
 
     public function getPaid(): PaymentRecievedType
     {
@@ -81,9 +83,24 @@ class ServiceAppointment{
         $this->booking = $booking;
     }
 
+    public function setCustomer(Customer $customer): void
+    {
+        $this->customer = $customer;
+    }
+
+    public function setCar(Car $car): void
+    {
+        $this->car = $car;
+    }
+
+    public function getCar(): Car
+    {
+        return $this->car;
+    }
+
     public function __toString()
     {
-        return "Appointment date: ". $this->date . " Appointment type: " . $this->booking->name;
+        return "Appointment date: ". $this->date . " Appointment type: " . $this->booking->name ." with ". $this->car." for ". $this->customer->getName();
     }
 
 
