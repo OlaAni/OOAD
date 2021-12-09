@@ -1,9 +1,6 @@
-import java.time.YearMonth;
-
 public class Customer extends Person{
     
     private String email;
-    private int phoneNumber;
     private String address;
     
     public String getEmail() {
@@ -12,14 +9,6 @@ public class Customer extends Person{
     
     public void setEmail(String email) {
         this.email = email;
-    }
-    
-    public int getPhoneNumber() {
-        return phoneNumber;
-    }
-    
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
     }
     
     public String getAddress() {
