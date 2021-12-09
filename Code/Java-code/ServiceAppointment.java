@@ -68,6 +68,7 @@ public class ServiceAppointment{
     }
 
     public void cancelAppointment(){
+        this.status = CarStatusType.CANCELLED;
     }
 
     
@@ -75,6 +76,10 @@ public class ServiceAppointment{
     {
         this.car = car;
 
+    }
+
+    public Car getCar() {
+        return this.car;
     }
 
         

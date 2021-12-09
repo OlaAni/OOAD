@@ -1,5 +1,4 @@
 import java.text.DecimalFormat;
-
 public class Part {
     DecimalFormat df = new DecimalFormat("###,###.##");
 
@@ -9,10 +8,13 @@ public class Part {
     
     public static double totalPartCost = 0;
 
-    public Part(String part, double price)
+    private ServiceAppointment serviceAppointment;
+
+    public Part(String part, double price, ServiceAppointment serviceAppointment)
     {
         this.name = part;
         this.price = price;
+        this.serviceAppointment = serviceAppointment;
 
         totalPartCost += price;
     }
@@ -52,6 +54,6 @@ public class Part {
 
     @Override
     public String toString() {
-        return this.name + " = " + df.format(this.price);
+        return this.name + " = " + df.format(this.price) + " for " + serviceAppointment.getCar().getRegistration();
     }
 }
