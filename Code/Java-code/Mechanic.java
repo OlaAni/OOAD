@@ -8,8 +8,7 @@ public class Mechanic extends Person{
     {
         this.setName(name);
         this.setPhoneNumber(phoneNumber);
-        this.setJob(job);
-
+        this.job = job;
     }
     public String getId() {
         return this.id;
@@ -40,6 +39,6 @@ public class Mechanic extends Person{
     }
 
     public String toString() {
-        return this.getJob()+" name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+". ID nuber is "+ this.getId();
+        return this.getJob()+" name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+". ID number is "+ this.id;
     }
 }

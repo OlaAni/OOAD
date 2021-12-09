@@ -6,6 +6,7 @@ public class Part {
     private String name;
     private double price;
     private int id;
+    
     public static double totalPartCost = 0;
 
     public Part(String part, double price)
