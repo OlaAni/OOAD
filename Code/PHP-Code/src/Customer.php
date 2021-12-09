@@ -1,9 +1,8 @@
 <?php
-
-class Customer
+require_once "autoload.php";
+class Customer extends Person
 {
     private string $email;
-    private int $phoneNumber;
     private string $address;
 
     public function getEmail(): string
@@ -14,16 +13,6 @@ class Customer
     public function setEmail(string $email): void
     {
         $this->email = $email;
-    }
-
-    public function getPhoneNumber(): int
-    {
-        return $this->phoneNumber;
-    }
-
-    public function setPhoneNumber(int $phoneNumber): void
-    {
-        $this->phoneNumber = $phoneNumber;
     }
 
     public function getAddress(): string
