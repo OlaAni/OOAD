@@ -51,12 +51,17 @@ class Part{
 
     public static function getTotalPartCost(): float|String
     {
-        return "Total part cost is = ". self::$totalPartCost;
+        return "\nTotal part cost is = ". self::$totalPartCost;
+    }
+
+    public static function setTotalPartCost(): void
+    {
+        self::$totalPartCost = 0;
     }
 
     public function __toString(): string
     {
-        return $this->part . " = " .$this->price;
+        return "\n".$this->part . " = " .$this->price;
     }
 
 
