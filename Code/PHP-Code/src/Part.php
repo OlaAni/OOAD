@@ -7,10 +7,13 @@ class Part{
 
     public static float $totalPartCost = 0;
 
-    public function __construct(String $part, float $price )
+    private ServiceAppointment $serviceAppointment;
+
+    public function __construct(String $part, float $price, ServiceAppointment $serviceAppointment)
     {
         $this->part = $part;
         $this->price = $price;
+        $this->serviceAppointment = $serviceAppointment;
 
         self::$totalPartCost += $price;
 
@@ -61,7 +64,7 @@ class Part{
 
     public function __toString(): string
     {
-        return "\n".$this->part . " = " .$this->price;
+        return "\n".$this->part . " = " .$this->price." for ". $this->serviceAppointment->getCar()->getRegistration();
     }
 
 

@@ -5,6 +5,8 @@ class Mechanic extends Person {
     private String $id;
     private JobType $job;
 
+    private ServiceAppointment $serviceAppointment;
+
     public function __construct(String $name, int $phoneNumber, JobType $job)
     {
         $this->setName($name);
@@ -32,14 +34,14 @@ class Mechanic extends Person {
         return $this->job;
     }
 
-    public function setCar(): void
+    public function setServiceAppointment(ServiceAppointment $serviceAppointment): void
     {
-
+        $this->serviceAppointment = $serviceAppointment;
     }
 
-    public function viewCarDetails(): void
+    public function viewCarDetails(): String
     {
-
+        return "\nCar Details\nReg: ".$this->serviceAppointment->getCar()->getRegistration()." Year: ".$this->serviceAppointment->getCar()->getYear();
     }
 
     public function __toString(): string
