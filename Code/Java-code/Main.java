@@ -13,6 +13,12 @@ public class Main {
         car2.setRegistration("GM123");
         car2.setYear(1990);
 
+
+        Car car3 = new Car();
+        car3.setMake("Porsche");
+        car3.setRegistration("EF22");
+        car3.setYear(2015);
+
         System.out.println("\n======================<--Customer Object-->=========================================");
         Customer customer1 = new Customer();
         customer1.setName("Jim Doe");
@@ -20,24 +26,39 @@ public class Main {
         Customer customer2 = new Customer();
         customer2.setName("Jake Doe");
 
+        Customer customer3 = new Customer();
+        customer3.setName("Jade Doe");
+
         
         System.out.println("\n======================<--ServiceAppointment Object-->=========================================");
-        
-        ServiceAppointment serviceAppointment1 = new ServiceAppointment();
-        serviceAppointment1.setStatus(CarStatusType.QUEUED);;
-        serviceAppointment1.setCustomer(customer1);
-        serviceAppointment1.setCar(car1);
-        serviceAppointment1.setBooking(BookingType.REPAIR);
-        serviceAppointment1.setDate("11/11/2011");
-        System.out.println(serviceAppointment1);
+        ServiceAppointment[] serviceAppointments1 = new ServiceAppointment[2];
+        ServiceAppointment[] serviceAppointments2 = new ServiceAppointment[1];
 
-        ServiceAppointment serviceAppointment2 = new ServiceAppointment();
-        serviceAppointment2.setStatus(CarStatusType.QUEUED);
-        serviceAppointment2.setCustomer(customer2);
-        serviceAppointment2.setCar(car2);
-        serviceAppointment2.setBooking(BookingType.MODIFICATION);
-        serviceAppointment2.setDate("11/12/2021");
-        System.out.println(serviceAppointment2);
+        
+        serviceAppointments1[0] = new ServiceAppointment();
+        serviceAppointments1[0].setStatus(CarStatusType.QUEUED);;
+        serviceAppointments1[0].setCustomer(customer1);
+        serviceAppointments1[0].setCar(car1);
+        serviceAppointments1[0].setBooking(BookingType.REPAIR);
+        serviceAppointments1[0].setDate("11/11/2011");
+        System.out.println(serviceAppointments1[0]);
+
+        serviceAppointments1[1] = new ServiceAppointment();
+        serviceAppointments1[1].setStatus(CarStatusType.QUEUED);
+        serviceAppointments1[1].setCustomer(customer2);
+        serviceAppointments1[1].setCar(car2);
+        serviceAppointments1[1].setBooking(BookingType.MODIFICATION);
+        serviceAppointments1[1].setDate("11/12/2021");
+        System.out.println(serviceAppointments1[1]);
+
+
+        serviceAppointments2[0] = new ServiceAppointment();
+        serviceAppointments2[0].setStatus(CarStatusType.QUEUED);;
+        serviceAppointments2[0].setCustomer(customer3);
+        serviceAppointments2[0].setCar(car3);
+        serviceAppointments2[0].setBooking(BookingType.INSPECTION);
+        serviceAppointments2[0].setDate("11/11/2015");
+        System.out.println(serviceAppointments2[0]);
 
         System.out.println("\n======================<--Mechanic + HeadMechanic Object-->=========================================");
 
@@ -46,43 +67,47 @@ public class Main {
         headMechanic.setId("HM11");
         mechanic1.setId("M550");
 
-        mechanic1.setServiceAppointment(serviceAppointment1);
-        headMechanic.setServiceAppointment(serviceAppointment2);
+        mechanic1.setServiceAppointments(serviceAppointments1);
+        headMechanic.setServiceAppointments(serviceAppointments2);
 
         System.out.println(mechanic1);
         System.out.println(headMechanic+"\n");
 
-        System.out.println(mechanic1.viewCarDetails());
-        System.out.println(headMechanic.viewCarDetails());
 
         System.out.println("\n======================<--Part Object-->=========================================");
 
         
-        Part part1 = new Part("Wheel", 5.00, serviceAppointment1);
-        Part part2 = new Part("Spoiler", 50.00,serviceAppointment1);
+        Part part1 = new Part("Wheel", 5.00, serviceAppointments1[0]);
+        Part part2 = new Part("Spoiler", 50.00,serviceAppointments1[0]);
 
 
         System.out.println(part1 +" installed by "+ mechanic1.getId());
         System.out.println(part2 +" installed by "+ headMechanic.getId());
 
         
-        System.out.println(Part.getTotalPartCost());
+        System.out.println("Total part cost is = "+ Part.getTotalPartCost());
         Part.ResetTotalPartCost();
 
         
-        Part part3 = new Part("Window", 15.00,serviceAppointment2);
-        Part part4 = new Part("Exhaust", 100.00,serviceAppointment2);
+        Part part3 = new Part("Window", 15.00,serviceAppointments1[1]);
+        Part part4 = new Part("Exhaust", 100.00,serviceAppointments1[1]);
+
+
 
 
         System.out.println(part3 +" installed by "+ mechanic1.getId());
         System.out.println(part4 +" installed by "+ mechanic1.getId());
 
         
-        System.out.println(Part.getTotalPartCost());
+        System.out.println("Total part cost is = "+ Part.getTotalPartCost());
         Part.ResetTotalPartCost();
 
-        serviceAppointment1.setStatus(CarStatusType.REPAIR_COMPLETE);;
-        serviceAppointment2.cancelAppointment();
+
+
+        serviceAppointments1[0].setStatus(CarStatusType.REPAIR_COMPLETE);
+        serviceAppointments1[1].cancelAppointment();
+        serviceAppointments2[0].setStatus(CarStatusType.QUEUED);
+
 
 
     }

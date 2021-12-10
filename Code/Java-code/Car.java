@@ -23,7 +23,7 @@ public class Car {
 	}
 
 	public String toString() {
-		return "Car \nReg:" +this.registration+" Year: "+ this.year + "Make: "+this.make;
+		return "Car Reg:" +this.registration+" Year: "+ this.year + "Make: "+this.make;
 
 	}
 }

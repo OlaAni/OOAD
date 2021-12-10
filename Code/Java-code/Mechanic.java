@@ -2,7 +2,7 @@ public class Mechanic extends Person{
     private String id;
     private JobType job;
 
-    private ServiceAppointment serviceAppointment;
+    private ServiceAppointment[] serviceAppointments;
 
     public Mechanic(String name, int phoneNumber, JobType job)
     {
@@ -27,19 +27,22 @@ public class Mechanic extends Person{
 		return this.job;
 	}
 
-
-    public void setServiceAppointment(ServiceAppointment serviceAppointment)
-    {
-        this.serviceAppointment = serviceAppointment;
-
+    public void setServiceAppointments(ServiceAppointment[] serviceAppointments) {
+        this.serviceAppointments = serviceAppointments;
     }
     
     public String viewCarDetails()
     {
-        return "Car Details\nReg:" +serviceAppointment.getCar().getRegistration()+" Year: "+ serviceAppointment.getCar().getYear();
+        String temp ="";
+        for (ServiceAppointment serviceAppointment : serviceAppointments) {
+            temp += serviceAppointment.getCar()+" // ";
+            
+        }
+        return temp;
     }
 
     public String toString() {
-        return this.getJob()+" name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+". ID number is "+ this.id;
+        return this.getJob()+" name is "+ this.getName()+ " and phonenumber is "+ this.getPhoneNumber()+". ID number is "+ this.id + 
+        "\n   "+ this.viewCarDetails();
     }
 }

@@ -43,8 +43,8 @@ public class Part {
         this.price = price;
     }
 
-    public static String getTotalPartCost() {
-        return "Total part cost is = "+ totalPartCost;
+    public static double getTotalPartCost() {
+        return totalPartCost;
     }
 
     public static void ResetTotalPartCost()

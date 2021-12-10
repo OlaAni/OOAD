@@ -5,6 +5,7 @@ public class HeadMechanic extends Mechanic{
 
 	public HeadMechanic(String name, int phoneNumber, JobType job) {
 		super(name, phoneNumber,job);
+		sales += Part.getTotalPartCost();
 	}
 
 
