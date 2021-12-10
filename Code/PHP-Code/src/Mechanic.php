@@ -5,7 +5,8 @@ class Mechanic extends Person {
     private String $id;
     private JobType $job;
 
-    private ServiceAppointment $serviceAppointment;
+    //private array ServiceAppointment $serviceAppointment;
+    private $serviceAppointments = array();
 
     public function __construct(String $name, int $phoneNumber, JobType $job)
     {
@@ -41,8 +42,14 @@ class Mechanic extends Person {
 
     public function viewCarDetails(): String
     {
-        return "\nCar Details\nReg: ".$this->serviceAppointment->getCar()->getRegistration()." Year: ".$this->serviceAppointment->getCar()->getYear();
+        $temp = "";
+        foreach ($this->serviceAppointments as $serviceAppointment) {
+            $temp .= $serviceAppointment->getCar() . " // ";
+
+        }
+        return $temp;
     }
+
 
     public function __toString(): string
     {

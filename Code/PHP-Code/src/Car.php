@@ -36,6 +36,6 @@ class Car{
 
     public function __toString(): string
     {
-        return "Car \n".$this->registration." Year: ".$this->year ." Make: ".$this->make;
+        return "Car".$this->registration." Year: ".$this->year ." Make: ".$this->make;
     }
 }

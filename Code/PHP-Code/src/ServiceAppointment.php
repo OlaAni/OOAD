@@ -100,7 +100,8 @@ class ServiceAppointment{
 
     public function __toString()
     {
-        return "Appointment date: ". $this->date . " Appointment type: " . $this->booking->name ." with ". $this->car." for ". $this->customer->getName();
+        return "// Appointment date: ". $this->date
+            . " Appointment type: " . $this->booking->name ." with ". $this->car ." for ". $this->customer->getName() . " //\n";
     }
 
 
